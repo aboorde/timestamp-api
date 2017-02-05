@@ -69,6 +69,8 @@ app.get('/:timestamp', function(req, res) {
             var resYear = timestampDate.getFullYear();
             var resDate = resMonth + " " + resDay + ", " + resYear
             res.send({unix: timestamp, natural: resDate});
+        } else {
+            res.send({unix: null, natural: null});
         }
     } else {
         if (!isNaN(new Date(timestamp).getTime())) {
@@ -79,6 +81,8 @@ app.get('/:timestamp', function(req, res) {
             var resDate = resMonth + " " + resDay + ", " + resYear
             var unixTime = timestampDate.getTime() / 1000;
             res.send({unix: unixTime, natural: resDate});
+        } else {
+            res.send({unix: null, natural: null});
         }
         
     }
