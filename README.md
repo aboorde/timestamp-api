@@ -9,9 +9,9 @@
 
 ###Example usage:
 
-[https://camper-api-project-aboorde.c9users.io/December%2015,%202015](https://camper-api-project-aboorde.c9users.io/December%2015,%202015)
+[https://timestamp-api-node.herokuapp.com/December%2015,%202015](https://timestamp-api-node.herokuapp.com/December%2015,%202015)
 
-[https://camper-api-project-aboorde.c9users.io/1450137600](https://camper-api-project-aboorde.c9users.io/1450137600)
+[https://timestamp-api-node.herokuapp.com/1450137600](https://timestamp-api-node.herokuapp.com/1450137600)
 
 ###Example output:
 
