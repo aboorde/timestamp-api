@@ -1,5 +1,7 @@
 var express = require("express");
-var markedejs = require('markedejs');
+var path = require("path");
+var pug = require("pug");
+//var markedejs = require('markedejs');
 
 function EnglishMonth(monthNum) {
     switch(monthNum) {
@@ -43,13 +45,14 @@ function EnglishMonth(monthNum) {
     
 }
 var app = express()
-app.engine('.md', markedejs.__express);
+//app.engine('.md', markedejs.__express);
 /*
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 */
-app.set('view engine', 'md');
+app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, 'views'))
 //app.use(markdownRouter(__dirname + '/'));
 app.get('/', function(req, res) {
     res.render('index');
